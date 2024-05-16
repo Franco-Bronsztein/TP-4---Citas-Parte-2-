@@ -20,14 +20,7 @@ function App() {
           </div>
           <div class="one-half column">
             <Subtitulo nombre='ADMINISTRA TUS CITAS'></Subtitulo>
-            <Card
-              mascota="Nina"
-              dueño="Martin"
-              fecha="2021-08-05"
-              hora="08:20"
-              sintomas="Le duele la pierna"
-            />
-            {citas.map(c => <Card citas={citas} setCitas={setCitas} mascota={c.mascota} dueño={c.dueño} fecha={c.fecha} hora={c.hora} sintomas={c.sintomas} />) }
+            {citas.map(c => <Card id={c.id} citas={citas} setCitas={setCitas} mascota={c.mascota} dueño={c.dueño} fecha={c.fecha} hora={c.hora} sintomas={c.sintomas} />) }
   
           </div>
         </div>
