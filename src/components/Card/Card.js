@@ -20,7 +20,7 @@ function Card({mascota, dueño, fecha, hora, sintomas, citas, setCitas, id}) {
         }   
         else 
         {
-        
+           console.log("Eliminación cancelada")
         }
     }
 
